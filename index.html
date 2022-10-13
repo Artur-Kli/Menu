@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <style id="userStyle">
+    /* a {
+      background: #43b0de;
+      color: #fff;
+    }
+    a:hover {
+      background: #E88930;
+    } */
+  </style>
 </head>
 <body>
 
@@ -19,7 +28,7 @@
                     value="Главная, О компании, Новости, Продукция">
     </p>
     <p>
-      Цвет текста: <input type="color" name="fc" value="#fff">
+      Цвет текста: <input type="color" name="fc" value="#ffffff">
     </p>
     <p>
       Цвет фона: <input type="color" name="bc" value="#43b0de">
@@ -28,9 +37,22 @@
       Цвет hover: <input type="color" name="hc" value="#E88930">
     </p>
     <p>
-      <input type="button" name="but" value="Создать меню">
+      <input 
+        type="button" name="but" value="Создать меню"
+        onclick="menu()"
+      >
     </p>
   </form>
+  <hr>
+
+  <div id="boxMenu">
+    <!-- <ul>
+      <li><a href="#">Пункт меню</a></li>
+      <li><a href="#">Пункт меню</a></li>
+      <li><a href="#">Пункт меню</a></li>
+    </ul> -->
+  </div>
+  <div id="boxPicture"></div>
 
   <script src="js/menu.js"></script>
 </body>
